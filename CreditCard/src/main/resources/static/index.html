@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My ecommerce</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text">Welcome to my ecommerce</div>
+        </div>
+            <div class="form">
+                Total: <span id="offerTotal">...</span>
+                Items count: <span id="offerItemsCount">...</span>
+                <form class="labels" id="checkout">
+                    <input name="firstname" type="text" required placeholder="First name" />
+                    <input name="lastname" type="text" required placeholder="Last name" />
+                    <input name="email" type="email" required placeholder="Email address" />
+                    <button class="acceptButton" id="buy">Accept</button>
+                </form>
+            </div>
+    </div>
+<ul class="productList" id="productList"></ul>
+<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

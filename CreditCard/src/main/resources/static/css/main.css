@@ -1,0 +1,80 @@
+body {
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    text-align: center;
+    font-size: 50px;
+    margin-top:15px;
+}
+
+.header-text {
+    text-align: center;
+    display: inline-block;
+    font-size: 80px;
+    border-radius: 50px;
+    border:2px;
+    padding:8px;
+    background: cornflowerblue;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+.productList li {
+    margin: 10px;
+    text-align: center;
+    border:1px;
+    background: aliceblue;
+}
+
+.productList img {
+    max-width: 100%;
+    height: auto;
+    border:1px;
+    background: aliceblue;
+}
+
+.form {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+    border: 1px;
+    border-radius: 50px;
+    padding:18px;
+    background: lightskyblue;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.acceptButton {
+    border-radius: 50px;
+    font-size: 20px;
+    border:1px;
+}
+
+.labels {
+    font-size: 30px;
+
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px;
+}

@@ -66,5 +66,27 @@ public class CreditCardTest {
         );
     }
 
+    @Test
+    void payForSomething() {
+        CreditCard card = new CreditCard();
+        card.assignCreditLimit(BigDecimal.valueOf(1000));
+        card.pay(BigDecimal.valueOf(100));
 
+        assertEquals(
+                BigDecimal.valueOf(900),
+                card.getBalance()
+        );
+    }
+
+    @Test
+    void itDenyPaymentWhenNotEnoughMoney() {
+        CreditCard card = new CreditCard();
+        card.assignCreditLimit(BigDecimal.valueOf(1000));
+        card.pay(BigDecimal.valueOf(900));
+
+        assertThrows(
+                InsufficientFundsException.class,
+                () -> card.pay(BigDecimal.valueOf(200))
+        );
+    }
 }
