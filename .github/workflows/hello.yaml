@@ -1,0 +1,8 @@
+name: Hello Github Actions
+on: [push]
+jobs: 
+  HelloWorld: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "wwww"
+      - run: "ls -la"
